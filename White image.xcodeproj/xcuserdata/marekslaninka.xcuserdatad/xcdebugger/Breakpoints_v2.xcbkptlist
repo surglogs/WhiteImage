@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8A9872E1-A38E-43F8-BA03-7DD98C7C78BB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E59737D8-18AC-4F0B-AB0C-49698D833075"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "White image/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "takePhoto(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E59737D8-18AC-4F0B-AB0C-49698D833075 - 63c7244be1ed482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;White_image.SLFileManager.DataReturn, White_image.SLFileManager.FileError&gt;) -&gt; () in White_image.ViewController.takePhoto(Any) -&gt; ()"
+                  moduleName = "White image"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marekslaninka/MOFA/White%20image/White%20image/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "E59737D8-18AC-4F0B-AB0C-49698D833075 - 63c7244be1ed482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;White_image.SLFileManager.DataReturn, White_image.SLFileManager.FileError&gt;) -&gt; () in White_image.ViewController.takePhoto(Any) -&gt; ()"
+                  moduleName = "White image"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marekslaninka/MOFA/White%20image/White%20image/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29FF2978-9F86-4D68-B7E0-D32E064CC6FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "White image/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "takePhoto(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

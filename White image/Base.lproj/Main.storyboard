@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="White_image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiK-73-PrR">
+                                <rect key="frame" x="135.66666666666666" y="783" width="121.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Take a photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lKo-2i-VFW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pPk-ui-nEn">
+                                <rect key="frame" x="16" y="88" width="361" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pPk-ui-nEn" secondAttribute="height" multiplier="361:279" id="3Gg-Pq-YSw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KQ7-hp-h3Q">
+                                <rect key="frame" x="16" y="445" width="361" height="279"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSr-LJ-nfo">
+                                <rect key="frame" x="142.66666666666666" y="59" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compressed photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HA-2J-Prf">
+                                <rect key="frame" x="123.66666666666669" y="416" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1HA-2J-Prf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1SV-cB-l3Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UiK-73-PrR" secondAttribute="bottom" id="5yi-ny-PTq"/>
+                            <constraint firstItem="KQ7-hp-h3Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CgN-PG-93J"/>
+                            <constraint firstItem="UiK-73-PrR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HtQ-5u-X5k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pPk-ui-nEn" secondAttribute="trailing" constant="16" id="JhR-ro-pkW"/>
+                            <constraint firstItem="1HA-2J-Prf" firstAttribute="top" secondItem="pPk-ui-nEn" secondAttribute="bottom" constant="49" id="Ld3-Di-8qw"/>
+                            <constraint firstItem="rSr-LJ-nfo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oqy-4o-552"/>
+                            <constraint firstItem="pPk-ui-nEn" firstAttribute="top" secondItem="rSr-LJ-nfo" secondAttribute="bottom" constant="8" symbolic="YES" id="Ptu-RC-adW"/>
+                            <constraint firstItem="KQ7-hp-h3Q" firstAttribute="top" secondItem="1HA-2J-Prf" secondAttribute="bottom" constant="8" symbolic="YES" id="TJM-Jh-Lvy"/>
+                            <constraint firstItem="KQ7-hp-h3Q" firstAttribute="width" secondItem="pPk-ui-nEn" secondAttribute="width" id="cKU-lc-P6H"/>
+                            <constraint firstItem="KQ7-hp-h3Q" firstAttribute="height" secondItem="pPk-ui-nEn" secondAttribute="height" id="jI3-F3-zeP"/>
+                            <constraint firstItem="pPk-ui-nEn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="p6r-9t-1yt"/>
+                            <constraint firstItem="rSr-LJ-nfo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xl3-Di-L63"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="compressedImageView" destination="KQ7-hp-h3Q" id="lcb-RT-VhY"/>
+                        <outlet property="originalImageView" destination="pPk-ui-nEn" id="Z88-Z3-DNL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
