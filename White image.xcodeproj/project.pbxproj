@@ -46,7 +46,6 @@
 		311642772ACFE31A00315AD3 = {
 			isa = PBXGroup;
 			children = (
-				311642A12ACFE6DC00315AD3 /* UIVIewController+Extensions.swift */,
 				311642822ACFE31A00315AD3 /* White image */,
 				311642812ACFE31A00315AD3 /* Products */,
 			);
@@ -63,6 +62,7 @@
 		311642822ACFE31A00315AD3 /* White image */ = {
 			isa = PBXGroup;
 			children = (
+				314728482ACFF55300755B9D /* Extensions */,
 				311642832ACFE31A00315AD3 /* AppDelegate.swift */,
 				311642852ACFE31A00315AD3 /* SceneDelegate.swift */,
 				311642872ACFE31A00315AD3 /* ViewController.swift */,
@@ -70,10 +70,18 @@
 				3116428C2ACFE31B00315AD3 /* Assets.xcassets */,
 				3116428E2ACFE31B00315AD3 /* LaunchScreen.storyboard */,
 				311642912ACFE31B00315AD3 /* Info.plist */,
-				311642992ACFE51900315AD3 /* UIImage+extensions.swift */,
 				3116429F2ACFE5A900315AD3 /* SLFileManager.swift */,
 			);
 			path = "White image";
+			sourceTree = "<group>";
+		};
+		314728482ACFF55300755B9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				311642A12ACFE6DC00315AD3 /* UIVIewController+Extensions.swift */,
+				311642992ACFE51900315AD3 /* UIImage+extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

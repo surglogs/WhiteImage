@@ -76,16 +76,11 @@ public extension UIImage {
 
     func scaleTo(_ newSize: CGSize) -> UIImage? {
         autoreleasepool { () -> UIImage? in
-            let renderer = UIGraphicsImageRenderer(size: newSize)
-            return renderer.image { _ in
-                self.draw(in: CGRect(origin: .zero, size: newSize))
-            }
+            UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+            self.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
+            let newImage: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return newImage
         }
-//            UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-//            self.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
-//            let newImage: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
-//            UIGraphicsEndImageContext()
-//            return newImage
-//        }
     }
 }
